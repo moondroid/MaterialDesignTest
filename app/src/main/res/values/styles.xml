@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- The application theme must inherit from Theme.AppCompat or its variants -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/colorSecondary</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/colorSecondaryDark</item>
+        <!-- colorAccent is used as the default value for colorControlActivated
+         which is used to tint widgets -->
+        <item name="colorAccent">@color/colorSecondaryDark</item>
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight & colorSwitchThumbNormal. -->
+
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:windowBackground">@color/windowBackgroundColor</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="photoItemForeground">?android:selectableItemBackground</item>
+        <item name="photoItemForegroundBorderless">?android:selectableItemBackground</item>
+
+    </style>
+
+</resources>
