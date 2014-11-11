@@ -25,6 +25,8 @@ import it.moondroid.materialdesigntest.dummy.DummyContent;
  */
 public class CardListFragment extends Fragment implements AdapterView.OnItemClickListener, SwipeRefreshLayout.OnRefreshListener {
 
+    private static final int REFRESH_DURATION = 4000;
+
     private ListView listView;
     private SwipeRefreshLayout swipeLayout;
 
@@ -65,7 +67,8 @@ public class CardListFragment extends Fragment implements AdapterView.OnItemClic
         listView.setOnItemClickListener(this);
 
         swipeLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_container);
-        //swipeLayout.setColorSchemeResources(R.color.white, R.color.black, R.color.white, R.color.black);
+        swipeLayout.setColorSchemeResources(android.R.color.holo_green_dark, android.R.color.holo_red_dark,
+                android.R.color.holo_blue_dark, android.R.color.holo_orange_dark);
         swipeLayout.setOnRefreshListener(this);
 
         return view;
@@ -105,7 +108,7 @@ public class CardListFragment extends Fragment implements AdapterView.OnItemClic
             public void run() {
                 stopRefreshing();
             }
-        }, 3000);
+        }, REFRESH_DURATION);
     }
 
 
