@@ -36,8 +36,11 @@ public class MainActivity extends ActionBarActivity {
         drawer.setDrawerListener(toggle);
 
         if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
-                    .add(R.id.container, CardViewFragment.newInstance())
+//            getFragmentManager().beginTransaction()
+//                    .add(R.id.container, CardViewFragment.newInstance())
+//                    .commit();
+              getFragmentManager().beginTransaction()
+                    .add(R.id.container, new CardListFragment())
                     .commit();
         }
     }
