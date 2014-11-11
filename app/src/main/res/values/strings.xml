@@ -3,13 +3,15 @@
 
     <string name="app_name">Material Design Test</string>
     <string name="hello_world">Hello world!</string>
-    <string name="placeholder_lorem_ipsum"></string>
+    <string name="placeholder_lorem_ipsum">lorem ipsum</string>
 
     <string name="action_settings">Settings</string>
 
     <string name="drawer_open">open</string>
     <string name="drawer_close">close</string>
 
+    <string name="navdrawer_item_cardview">Card View</string>
+    <string name="navdrawer_item_cardlist">Card List</string>
 
     <!--<string name="cardview_contents">This is a CardView widget. CardView widgets can have-->
         <!--shadows and rounded corners.-->
@@ -21,5 +23,7 @@
     <string name="cardview_contents">This is a CardView widget.\n\nCardView widgets can have shadows and rounded corners.</string>
     <string name="cardview_radius_seekbar_text">Radius</string>
     <string name="cardview_elevation_seekbar_text">Elevation</string>
+
+
 
 </resources>
